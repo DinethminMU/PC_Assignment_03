@@ -25,15 +25,6 @@ Four different implementations of matrix multiplication demonstrating various pa
 - 8×8 thread blocks for parallel computation
 - Compile: `nvcc -arch=sm_75 -O3 -o cuda_matrixmul cuda_matrixmul.cu`
 
-## Performance Comparison
-
-| Implementation | Hardware | Typical Performance (1024×1024) |
-|---|---|---|
-| Serial | Single CPU core | 2-10 seconds |
-| OpenMP | Multi-core CPU | 100-500 ms |
-| MPI | CPU cluster | 50-200 ms |
-| CUDA | NVIDIA GPU | 2-15 ms |
-
 ## Requirements
 
 - **Serial/OpenMP/MPI**: C compiler, MPI library
